@@ -1,5 +1,7 @@
 # KacperKuszek_PatrykKutolowski_2_Inf_NW_nl_2_graRpg
-Opis
+(W repozytorium znajdują się tylko skrypty do ocenienia. Całą gre przedsawimy na następnych zajęciach :))
+
+Opis:
 Jest to gra RPG stworzona w silniku Unity z wykorzystaniem języka C#. Gracz steruje postacią poruszającą się za pomocą strzałek na klawiaturze. Gra umożliwia interakcje z otoczeniem, atakowanie wrogów i rozwijanie postaci poprzez drzewko umiejętności.
 
 Funkcjonalności:
