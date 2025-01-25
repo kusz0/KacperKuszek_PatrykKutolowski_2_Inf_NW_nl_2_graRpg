@@ -4,12 +4,6 @@
 Opis:
 Jest to gra RPG stworzona w silniku Unity z wykorzystaniem języka C#. Gracz steruje postacią poruszającą się za pomocą strzałek na klawiaturze. Gra umożliwia interakcje z otoczeniem, atakowanie wrogów i rozwijanie postaci poprzez drzewko umiejętności.
 
-Funkcjonalności:
-Poruszanie postacią: sterowanie za pomocą strzałek na klawiaturze.
-Atakowanie: gracz atakuje naciskając klawisz "K".
-Statystyki postaci: naciśnięcie "1" wyświetla aktualne statystyki postaci.
-Drzewko umiejętności: naciśnięcie "2" otwiera drzewko umiejętności, pozwalając na rozwój postaci.
-
 Technologie:
 Unity – silnik gry.
 C# – język programowania użyty do stworzenia skryptów.
