@@ -15,9 +15,8 @@ Atakowanie: Naciśnij klawisz "K", aby zaatakować.
 Wyświetlanie statystyk: Naciśnij "1", aby zobaczyć statystyki swojej postaci.
 Drzewko umiejętności: Naciśnij "2", aby otworzyć drzewko umiejętności i rozwinąć postać.
 
-![screenrpg4](https://github.com/user-attachments/assets/166b55bc-f345-45c0-87cf-30874ae87505)
-![screenrpg2](https://github.com/user-attachments/assets/3d2752a2-df0d-4066-be38-c3f416b707ea)
 ![screenrpg1](https://github.com/user-attachments/assets/85428af7-f741-4a89-9709-17432022f912)
+![screenrpg2](https://github.com/user-attachments/assets/3d2752a2-df0d-4066-be38-c3f416b707ea)
 
 Struktura plików:
 W projekcie znajdują się skrypty odpowiadające za różne mechaniki gry:
@@ -42,6 +41,8 @@ Rozbudowa świata gry (nowe przedmioty, przeciwnicy).
 Zwiększenie interakcji z otoczeniem (np. NPC, zadania poboczne).
 
 Autorzy
-Projekt stworzony przez Kacpra Kuszka i Patryka Kutolowskiego .
+Projekt stworzony przez Kacpra Kuszka i Patryka Kutolowskiego . ![screenrpg3](https://github.com/user-attachments/assets/4029a299-7e41-4b1b-9250-00e3948f33b1)
+
+![screenrpg4](https://github.com/user-attachments/assets/1dc44b48-90a4-4d62-be8b-1b638d3aeb6c)
 
 
