@@ -15,6 +15,9 @@ Atakowanie: Naciśnij klawisz "K", aby zaatakować.
 Wyświetlanie statystyk: Naciśnij "1", aby zobaczyć statystyki swojej postaci.
 Drzewko umiejętności: Naciśnij "2", aby otworzyć drzewko umiejętności i rozwinąć postać.
 
+![screenrpg4](https://github.com/user-attachments/assets/166b55bc-f345-45c0-87cf-30874ae87505)
+![screenrpg2](https://github.com/user-attachments/assets/3d2752a2-df0d-4066-be38-c3f416b707ea)
+![screenrpg1](https://github.com/user-attachments/assets/85428af7-f741-4a89-9709-17432022f912)
 
 Struktura plików:
 W projekcie znajdują się skrypty odpowiadające za różne mechaniki gry:
