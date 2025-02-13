@@ -32,7 +32,6 @@ SkillSO.cs - skrypt który umozliwia stworzenie nowej umiejetności w środowisk
 SkilltreeManager.cs - skrypt który dysponuje zasobami w UI drzewka umiejetności. | 
 ToggleSkillTree.cs - skrypt który pozwala graczowi wyswietlenie UI drzewka. | 
 
-Każdy skrypt jest odpowiedzialny za jedną, wyodrębnioną funkcję, co zapewnia elastyczność i modularność w rozwoju projektu.
 
 Przyszłe plany
 Dodanie nowych umiejętności do drzewka umiejętności(bo na razie działa tylko umiejętność związana ze zdrowiem gracza).
