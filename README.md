@@ -2,14 +2,17 @@
 (W repozytorium znajdują się tylko skrypty do ocenienia. Całą gre przedsawimy na następnych zajęciach :))
 
 1.Opis:
+
 Jest to gra RPG stworzona w silniku Unity z wykorzystaniem języka C#. Gracz steruje postacią poruszającą się za pomocą strzałek na klawiaturze. Gra umożliwia interakcje z otoczeniem, atakowanie wrogów i rozwijanie postaci poprzez drzewko umiejętności.
 
 2.Technologie:
+
 Unity – silnik gry.
 C# – język programowania użyty do stworzenia skryptów.
 Modularna struktura kodu – każdy skrypt odpowiada za pojedynczą funkcjonalność, np. Player_Health, Enemy_Combat, co ułatwia modyfikowanie i rozszerzanie gry.
 
 3.Sposób gry:
+
 Poruszanie postacią: Używaj strzałek na klawiaturze, aby poruszać postacią po świecie gry.
 Atakowanie: Naciśnij klawisz "K", aby zaatakować.
 Wyświetlanie statystyk: Naciśnij "1", aby zobaczyć statystyki swojej postaci.
@@ -19,6 +22,7 @@ Drzewko umiejętności: Naciśnij "2", aby otworzyć drzewko umiejętności i ro
 ![screenrpg2](https://github.com/user-attachments/assets/3d2752a2-df0d-4066-be38-c3f416b707ea)
 
 4.Struktura plików:
+
 W projekcie znajdują się skrypty odpowiadające za różne mechaniki gry:
 
 Player_Movement.cs - skrypt odpowiadajacy za poruszanie się gracza. | 
@@ -111,6 +115,7 @@ Obsługiwać zdarzenia na bieżąco w Update().
 Wykonywać operacje związane z fizyką w FixedUpdate().
 
 7.Autorzy
+
 Projekt stworzony przez Kacpra Kuszka i Patryka Kutolowskiego . ![screenrpg3](https://github.com/user-attachments/assets/4029a299-7e41-4b1b-9250-00e3948f33b1)
 
 ![screenrpg4](https://github.com/user-attachments/assets/1dc44b48-90a4-4d62-be8b-1b638d3aeb6c)
