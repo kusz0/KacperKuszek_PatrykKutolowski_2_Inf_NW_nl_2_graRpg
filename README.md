@@ -55,7 +55,7 @@ Zwiększenie interakcji z otoczeniem (np. NPC, zadania poboczne).
 
 
 6.Architektura
-a)Dziedziczenie
+a)DZIEDZICZENIE:
 Dziedziczenie jest jednym z fundamentów architektury projektu i przejawia się w dwóch głównych aspektach:
 Dziedziczenie po MonoBehaviour:
 Wszystkie klasy odpowiedzialne za funkcjonalność gry, takie jak PlayerHealth, EnemyMovement, SkillTreeManager, czy StatsManager, dziedziczą po MonoBehaviour.
@@ -66,7 +66,7 @@ Integrują się z silnikiem Unity w celu reagowania na zdarzenia w grze.
 Dziedziczenie specjalizowanych elementów:
 W grze występują pewne przypadki implementacji interakcji między różnymi klasami za pomocą wspólnych interfejsów i delegatów. Choć pełne hierarchiczne dziedziczenie klas nie jest szeroko wykorzystywane (np. brak głębokiej hierarchii), MonoBehaviour zastępuje w tym projekcie rolę klasy bazowej.
 
-b)Polimorfizm
+b)POLIMORFIZM:
 Polimorfizm jest realizowany głównie w kontekście:
 
 I)Dynamiczne wywoływanie zdarzeń:
@@ -81,7 +81,7 @@ PlayerMovment2 odpowiada za poruszanie się gracza z uwzględnieniem fizyki.
 III)Polimorfizm w logice ataków:
 Zarówno Player_Combat, jak i Enemy_Combat używają tej samej logiki opartej na wykrywaniu kolizji (metoda Physics2D.OverlapCircleAll) dla ataków. Dzięki temu mechanizm ataku jest zunifikowany, ale konkretne zachowania mogą się różnić w zależności od klasy.
 
-c)Hermetyzacja
+c)HERMETYZACJA:
 Hermetyzacja w projekcie przejawia się poprzez:
 
 I)Enkapsulację danych:
@@ -99,10 +99,10 @@ Rigidbody2D do obsługi fizyki.
 Animator do obsługi animacji.
 TMP_Text z TextMesh Pro do zaawansowanego wyświetlania tekstu w grze.
 
-e)Interfejsy:
+e)INTERFEJSY:
 Choć nie zostały bezpośrednio zaimplementowane w kodzie, logika zdarzeń w klasach takich jak SkillSlot czy Enemy_Health spełnia podobną rolę, umożliwiając odseparowanie źródła zdarzeń od ich obsługi.
 
-f)Cykl życia w Unity:
+f)CYKL ZYCIA W UNITY:
 Dziedziczenie po MonoBehaviour zapewnia klasom pełną integrację z cyklem życia Unity. Dzięki temu każda klasa:
 Może inicjalizować dane w Start() lub Awake().
 Obsługiwać zdarzenia na bieżąco w Update().
