@@ -20,18 +20,31 @@ Drzewko umiejętności: Naciśnij "2", aby otworzyć drzewko umiejętności i ro
 
 4.Struktura plików:
 W projekcie znajdują się skrypty odpowiadające za różne mechaniki gry:
+
 Player_Movement.cs - skrypt odpowiadajacy za poruszanie się gracza. | 
+
 Player_Combat.cs - skrypt odpowiadający za walke gracza. | 
+
 Player_Health.cs – skrypt odpowiadający za zdrowie gracza. | 
+
 Enemy_Movment.cs - skrypt odpowiadajacy za poruszanie sie przeciwnika. | 
+
 Enemy_Combat.cs – skrypt odpowiadający za mechanikę walki przeciwnika. | 
+
 Enemy_Health.cs - skrypt odpowiadajacy za zdrowie przeciwnika. | 
+
 Enemy_Knockback.cs - skrypt odpowiadajacy za odrzut podczas walki. | 
+
 Enemy_Spawner.cs - skrypt odpowadajacy za obiekty w których ma się pojawić przeciwnik. | 
+
 Skill_Manager.cs - skrypt w którym porzątkuje wszystkie mechaniki związane z drzewkiem umiejętności. | 
+
 Skill_Slot.cs - skrypt w którym odbywa się mechanika związana z drzewkiem umiejętności. | 
+
 SkillSO.cs - skrypt który umozliwia stworzenie nowej umiejetności w środowisku unity. | 
+
 SkilltreeManager.cs - skrypt który dysponuje zasobami w UI drzewka umiejetności. | 
+
 ToggleSkillTree.cs - skrypt który pozwala graczowi wyswietlenie UI drzewka. | 
 
 
@@ -50,22 +63,27 @@ Dzięki temu klasy te:
 Mogą być przypisywane jako komponenty do obiektów w scenie.
 Zyskują dostęp do wbudowanych metod cyklu życia obiektów w Unity, takich jak Start(), Update(), OnDrawGizmosSelected(), itd.
 Integrują się z silnikiem Unity w celu reagowania na zdarzenia w grze.
-
 Dziedziczenie specjalizowanych elementów:
 W grze występują pewne przypadki implementacji interakcji między różnymi klasami za pomocą wspólnych interfejsów i delegatów. Choć pełne hierarchiczne dziedziczenie klas nie jest szeroko wykorzystywane (np. brak głębokiej hierarchii), MonoBehaviour zastępuje w tym projekcie rolę klasy bazowej.
+
 b)Polimorfizm
 Polimorfizm jest realizowany głównie w kontekście:
+
 I)Dynamiczne wywoływanie zdarzeń:
 Klasy, takie jak SkillSlot, wykorzystują zdarzenia (OnAbilityPointSpent, OnSkillMaxed) i pozwalają na różnorodne reakcje obiektów, które nasłuchują tych zdarzeń. Dzięki temu różne komponenty mogą reagować na wspólne zdarzenie w zróżnicowany sposób.
 Przykład:
+
 II)Różnorodność zachowań:
 Klasy takie jak EnemyMovement czy PlayerMovment2 nadpisują wbudowane metody, takie jak Update() czy FixedUpdate(), implementując własne zachowania:
 EnemyMovement obsługuje ściganie gracza i atakowanie.
 PlayerMovment2 odpowiada za poruszanie się gracza z uwzględnieniem fizyki.
+
 III)Polimorfizm w logice ataków:
 Zarówno Player_Combat, jak i Enemy_Combat używają tej samej logiki opartej na wykrywaniu kolizji (metoda Physics2D.OverlapCircleAll) dla ataków. Dzięki temu mechanizm ataku jest zunifikowany, ale konkretne zachowania mogą się różnić w zależności od klasy.
+
 c)Hermetyzacja
 Hermetyzacja w projekcie przejawia się poprzez:
+
 I)Enkapsulację danych:
 Kluczowe zmienne w klasach, takie jak currentHealth czy maxHealth w PlayerHealth i Enemy_Health, są zarządzane wewnątrz klasy, a dostęp do nich odbywa się przez metody takie jak ChangeHealth().
 Hermetyzacja logiki zarządzania umiejętnościami:
@@ -80,8 +98,10 @@ Dodatkowo wykorzystywane są komponenty takie jak:
 Rigidbody2D do obsługi fizyki.
 Animator do obsługi animacji.
 TMP_Text z TextMesh Pro do zaawansowanego wyświetlania tekstu w grze.
+
 e)Interfejsy:
 Choć nie zostały bezpośrednio zaimplementowane w kodzie, logika zdarzeń w klasach takich jak SkillSlot czy Enemy_Health spełnia podobną rolę, umożliwiając odseparowanie źródła zdarzeń od ich obsługi.
+
 f)Cykl życia w Unity:
 Dziedziczenie po MonoBehaviour zapewnia klasom pełną integrację z cyklem życia Unity. Dzięki temu każda klasa:
 Może inicjalizować dane w Start() lub Awake().
