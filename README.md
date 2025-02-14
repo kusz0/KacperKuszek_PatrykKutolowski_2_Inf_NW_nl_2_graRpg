@@ -49,12 +49,14 @@ ToggleSkillTree.cs - skrypt który pozwala graczowi wyswietlenie UI drzewka. |
 
 
 5.Przyszłe plany
+
 Dodanie nowych umiejętności do drzewka umiejętności(bo na razie działa tylko umiejętność związana ze zdrowiem gracza).
 Rozbudowa świata gry (nowe przedmioty, przeciwnicy).
 Zwiększenie interakcji z otoczeniem (np. NPC, zadania poboczne).
 
 
 6.Architektura
+
 a)DZIEDZICZENIE:
 Dziedziczenie jest jednym z fundamentów architektury projektu i przejawia się w dwóch głównych aspektach:
 Dziedziczenie po MonoBehaviour:
